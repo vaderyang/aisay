@@ -1,4 +1,4 @@
-# AI Speech Generator
+# aisay
 aisay means AI Say
 
 ## Description
