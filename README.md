@@ -12,6 +12,7 @@ git clone https://github.com/vaderyang/aisay
 
 To install the required dependencies, run:
 ```bash
+cd aisay
 pip install -r requirements.txt
 ```
 
