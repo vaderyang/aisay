@@ -17,12 +17,18 @@ pip install -r requirements.txt
 
 ## Usage
 Run the script with the following command:
+Setup your openai key
 ```bash
-export OPENAI_API_KEY=sk-***********  #setup your openai key
+export OPENAI_API_KEY=sk-***********  
+```
+You may alternatively modify aisay.py direclty to put your openai key in client = OpenAI(api_key="sk-****") in a safe machine environment.
+
+```bash
 python3 aisay.py [arguments]
 ```
 
 Arguments:
+- string: Text to say
 - `-v/--voice`: Voice model to use (default: onyx)
 - `-f/--file`: Text file to read input from
 - `-o/--output`: Output file path for the generated speech
