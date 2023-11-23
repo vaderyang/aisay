@@ -1,3 +1,3 @@
-sounddevice
-soundfile
 openai
+playsound
+PyObjC
