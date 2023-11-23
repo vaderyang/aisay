@@ -9,7 +9,7 @@ import os, sys
 
 # Set command-line arguments
 parser = argparse.ArgumentParser(description="AI Speech Generator")
-parser.add_argument("input", nargs='?', default="", help="Direct input text for speech synthesis")
+parser.add_argument("input", nargs='*', default="", help="Direct input text for speech synthesis")
 parser.add_argument("-v", "--voice", default="onyx", help="Voice model to use (default: onyx)")
 parser.add_argument("-f", "--file", help="Text file to read input from")
 parser.add_argument("-o", "--output", help="Output file path for the generated speech")
@@ -39,6 +39,8 @@ else:
     temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.mp3', dir='/tmp')
     speech_file_path = Path(temp_file.name)
 
+if args.input:
+    args.input = ' '.join(args.input)
 # Generate audio
 response = client.audio.speech.create(
     model="tts-1",
