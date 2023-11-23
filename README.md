@@ -18,6 +18,7 @@ pip install -r requirements.txt
 ## Usage
 Run the script with the following command:
 ```bash
+export OPENAI_API_KEY=sk-***********  #setup your openai key
 python3 aisay.py [arguments]
 ```
 
