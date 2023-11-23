@@ -38,6 +38,7 @@ Arguments:
 ```bash
 python3 aisay.py Hello World
 ```
+Check the volume settings to make sure you hear the speech.
 
 ```bash
 python3 aisay.py -v echo -o helloworld.mp3 Hello Again!
