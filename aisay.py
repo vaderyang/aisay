@@ -2,8 +2,7 @@
 import argparse
 import tempfile
 from pathlib import Path
-import sounddevice as sd
-import soundfile as sf
+from playsound import playsound
 from openai import OpenAI
 import os, sys
 
@@ -53,8 +52,4 @@ response = client.audio.speech.create(
 response.stream_to_file(str(speech_file_path))
 
 # Read the audio file
-audio_data, sample_rate = sf.read(str(speech_file_path))
-
-audio_data, sample_rate = sf.read(speech_file_path)
-sd.play(audio_data, sample_rate)
-sd.wait()
+playsound(str(speech_file_path))
