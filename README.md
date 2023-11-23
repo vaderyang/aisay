@@ -5,6 +5,11 @@ aisay means AI Say
 This tool generates speech from text using OpenAI's speech API and plays it back.
 
 ## Installation
+
+```bash
+git clone https://github.com/vaderyang/aisay
+```
+
 To install the required dependencies, run:
 ```bash
 pip install -r requirements.txt
@@ -30,7 +35,7 @@ python3 aisay.py Hello World
 ```bash
 python3 aisay.py -v echo -o helloworld.mp3 Hello Again!
 ```
-## Installation
+## Extra Installation Options
 If you want to make it as a system command for easier access, run:
 ```bash
 sudo cp aisay.py /usr/local/bin/aisay
