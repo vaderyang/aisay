@@ -48,6 +48,7 @@ python3 aisay.py -v echo -o helloworld.mp3 Hello Again!
 If you want to make it as a system command for easier access, run:
 ```bash
 sudo cp aisay.py /usr/local/bin/aisay
+sudo chmod +x /usr/local/bin/aisay
 aisay Hello World
 ```
 if this doesn't work, find out the right path to save your aisay file by 
